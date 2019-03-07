@@ -1,3 +1,5 @@
+# Performing Geospatial Temporal Analysis in Geo Spark
+
 * Range query use ST_Contains. Given a query rectangle R and a set of points P, find all the points within R.
 * Range join query use ST_Contains. Given a set of Rectangles R and a set of Points S, find all (Point, Rectangle) pairs such that the point is within the rectangle.
 * Distance query use ST_Within. Given a point location P and distance D in km, find all points that lie within a distance D from P
