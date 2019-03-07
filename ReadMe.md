@@ -22,7 +22,7 @@ Output: Boolean (true or false)
 
 Definition: Parse the pointString1 (e.g., "-88.331492,32.324142") and pointString2 (e.g., "-88.331492,32.324142") to a format that you are comfortable with. Then check whether the two points are within the given distance. Consider on-boundary point. To simplify the problem, please assume all coordinates are on a planar space and calculate their Euclidean distance.
 
-### 3. Use Your UDF in SparkSQL
+### 3. Use UDF in SparkSQL
 
 Range query:
 ```
@@ -51,5 +51,3 @@ select *
 from point p1, point p2 
 where ST_Within(p1._c0, p2._c0, 10)
 ```
-
-### 4. Run code on Apache Spark using "spark-submit"
