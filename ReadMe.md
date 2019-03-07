@@ -1,7 +1,7 @@
-* Range query: Use ST_Contains. Given a query rectangle R and a set of points P, find all the points within R.
-* Range join query: Use ST_Contains. Given a set of Rectangles R and a set of Points S, find all (Point, Rectangle) pairs such that the point is within the rectangle.
-* Distance query: Use ST_Within. Given a point location P and distance D in km, find all points that lie within a distance D from P
-* Distance join query: Use ST_Within. Given a set of Points S1 and a set of Points S2 and a distance D in km, find all (s1, s2) pairs such that s1 is within a distance D from s2 (i.e., s1 belongs to S1 and s2 belongs to S2).
+* Range query use ST_Contains. Given a query rectangle R and a set of points P, find all the points within R.
+* Range join query use ST_Contains. Given a set of Rectangles R and a set of Points S, find all (Point, Rectangle) pairs such that the point is within the rectangle.
+* Distance query use ST_Within. Given a point location P and distance D in km, find all points that lie within a distance D from P
+* Distance join query use ST_Within. Given a set of Points S1 and a set of Points S2 and a distance D in km, find all (s1, s2) pairs such that s1 is within a distance D from s2 (i.e., s1 belongs to S1 and s2 belongs to S2).
 
 
 ### 1. ST_Contains
@@ -50,4 +50,4 @@ from point p1, point p2
 where ST_Within(p1._c0, p2._c0, 10)
 ```
 
-### 4. Run your code on Apache Spark using "spark-submit"
+### 4. Run code on Apache Spark using "spark-submit"
